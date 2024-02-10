@@ -62,7 +62,6 @@ public class InfrastructureDepartament {
         return "";
     }
 
-
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---44
 
     /*
@@ -107,7 +106,6 @@ public class InfrastructureDepartament {
 
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
 
-
     public double promedioAltura() {
         double sum = 0;
         for (Billboard billboard : billboards) {
@@ -149,7 +147,6 @@ public class InfrastructureDepartament {
         }
         return "Hay " + trues + " en Uso y " + falses + " en Desuso.";
     }
-
 
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
 
@@ -200,6 +197,4 @@ public class InfrastructureDepartament {
 
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
 
-
 }
-
