@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class InfrastructureDepartament {
 
@@ -14,27 +15,28 @@ public class InfrastructureDepartament {
 
     private ArrayList<Billboard> billboards;
 
-    public InfrastructureDepartament() throws Exception{
+    public InfrastructureDepartament() throws Exception {
         billboards = new ArrayList<>();
         loadBillboard();
         resultados();
     }
-    public void  addBillboard(double w, double h, boolean ui, String b){
+
+    public void addBillboard(double w, double h, boolean ui, String b) {
 
     }
 
-    private void saveBillboard(){
-
+    private void saveBillboard() {
+        // Implementación pendiente
     }
 
-    private void loadBillboard()throws Exception{
+    private void loadBillboard() throws Exception {
         String resource = Main.class.getClassLoader().getResource(BILLBOARD_FILE_NAME).getFile();
         File file = new File(resource);
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
         String line = br.readLine();
         line = br.readLine();
-        while (line!=null){
+        while (line != null) {
             importData(line);
             line = br.readLine();
         }
@@ -44,22 +46,24 @@ public class InfrastructureDepartament {
 
     }
 
-    public void exportDangerousBillboardReport(String fn){
-
+    public void exportDangerousBillboardReport(String fn) {
+        // Implementación pendiente
     }
 
-    public void importData(String fn){
+    public void importData(String fn) {
         String[] columns = fn.split("\\|");
         System.out.println(Arrays.toString(columns));
-        Billboard billboard = new Billboard(Double.parseDouble(columns[0]),Double.parseDouble(columns[1]),Boolean.parseBoolean(columns[2]),columns[3]);
+        Billboard billboard = new Billboard(Double.parseDouble(columns[0]), Double.parseDouble(columns[1]), Boolean.parseBoolean(columns[2]), columns[3]);
         billboards.add(billboard);
     }
 
-    public String toString(){
+    public String toString() {
+        // Implementación pendiente
         return "";
     }
 
-    public double averageHeight(){
+    public double averageHeight() {
+        // Implementación pendiente
         return 0;
     }
 
@@ -82,7 +86,6 @@ public class InfrastructureDepartament {
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(fr);
 
-
         // Lee la primera línea del archivo
         String line = br.readLine();
 
@@ -90,9 +93,6 @@ public class InfrastructureDepartament {
         while (line != null) {
             // Divide la línea en columnas utilizando el carácter "|" como separador
             String[] columns = line.split("\\|");
-
-
-
 
             // Imprime las columnas
             if (columns.length > 0) {
@@ -108,7 +108,7 @@ public class InfrastructureDepartament {
         // Cierra el BufferedReader
         br.close();
     }
-     */
+    */
 
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
 
@@ -132,7 +132,7 @@ public class InfrastructureDepartament {
     public double promedioAreas() {
         double sum = 0;
         for (Billboard billboard : billboards) {
-            sum += billboard.getWidth() * billboard.getHeight();
+            sum += billboard.calculateArea();
         }
         return sum / billboards.size();
     }
@@ -142,11 +142,11 @@ public class InfrastructureDepartament {
         int falses = 0;
 
         for (Billboard billboard : billboards) {
-            if(billboard.getIsInUse()) {
+            if (billboard.getIsInUse()) {
                 trues++;
             }
 
-            if(!billboard.getIsInUse()) {
+            if (!billboard.getIsInUse()) {
                 falses++;
             }
         }
@@ -158,14 +158,48 @@ public class InfrastructureDepartament {
 
     public void resultados() {
         System.out.println();
+        System.out.println();
+        System.out.println("RESULTADOS DE LA BASE DE DATOS DE BILLBOARD:");
+        System.out.println();
         System.out.println("El promedio de las Alturas es: " + promedioAltura());
         System.out.println("El promedio de los Anchos es: " + promedioAnchos());
         System.out.println("El promedio de las Areas es: " + promedioAreas());
         System.out.println(contadorDeActivos());
+        System.out.println();
+        System.out.println("Lista de nombres y sus |repeticiones:");
+        System.out.println(nombresConRepeticiones());
 
     }
 
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
+
+    public String nombresConRepeticiones() {
+        StringBuilder resultado = new StringBuilder();
+
+        //lista para almacenar los nombres (sin repeticiones)
+        List<String> nombresSinRepeticiones = new ArrayList<>();
+
+        for (Billboard billboard : billboards) {
+
+            String nombre = String.valueOf(billboard.getBrand());
+
+            if (!nombresSinRepeticiones.contains(nombre)) {
+                nombresSinRepeticiones.add(nombre);
+            }
+        }
+
+        for (String nombre : nombresSinRepeticiones) {
+            int repeticiones = 0;
+            for (Billboard billboard : billboards) {
+                if (nombre.equals(billboard.getBrand())) {
+                    repeticiones++;
+                }
+            }
+            resultado.append(" - ").append(nombre).append(": ").append(repeticiones).append(" veces\n");
+        }
+
+        return resultado.toString();
+    }
 
 
 }

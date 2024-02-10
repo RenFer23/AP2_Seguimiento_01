@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86677d3c-935d-4478-bc12-79e3f571fa98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/icesi/edu/model/Billboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/icesi/edu/model/InfrastructureDepartament.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/icesi/edu/ui/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/BillboardDataExported.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/icesi/edu/model/BillboardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/icesi/edu/model/InfrastructureDepartamentTest.java" afterDir="false" />
+    <list default="true" id="86677d3c-935d-4478-bc12-79e3f571fa98" name="Changes" comment="them.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/icesi/edu/model/InfrastructureDepartament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/icesi/edu/model/InfrastructureDepartament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/BillboardDataExported.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/BillboardDataExported.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/icesi/edu/model/InfrastructureDepartamentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/icesi/edu/model/InfrastructureDepartamentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -76,7 +70,7 @@
       <recent name="C:\Users\renzi\Documents\DERENZO\Seguimineto01\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InfrastructureDepartamentTest.testPromedioAltura">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="co.icesi.edu.ui.Main" />
       <module name="Seguimineto01" />
@@ -86,21 +80,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BillboardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Seguimineto01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="co.icesi.edu.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="co.icesi.edu.model" />
-      <option name="MAIN_CLASS_NAME" value="co.icesi.edu.model.BillboardTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,6 +95,22 @@
       <option name="PACKAGE_NAME" value="co.icesi.edu.model" />
       <option name="MAIN_CLASS_NAME" value="co.icesi.edu.model.InfrastructureDepartamentTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InfrastructureDepartamentTest.testLoadBillboard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Seguimineto01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.icesi.edu.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.icesi.edu.model" />
+      <option name="MAIN_CLASS_NAME" value="co.icesi.edu.model.InfrastructureDepartamentTest" />
+      <option name="METHOD_NAME" value="testLoadBillboard" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InfrastructureDepartamentTest.testPromedioAltura" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.InfrastructureDepartamentTest.testPromedioAnchos" />
+        <item itemvalue="JUnit.InfrastructureDepartamentTest.testLoadBillboard" />
         <item itemvalue="JUnit.InfrastructureDepartamentTest" />
-        <item itemvalue="JUnit.BillboardTest" />
+        <item itemvalue="JUnit.InfrastructureDepartamentTest.testPromedioAltura" />
+        <item itemvalue="JUnit.InfrastructureDepartamentTest.testPromedioAnchos" />
       </list>
     </recent_temporary>
   </component>
@@ -173,8 +168,17 @@
       <workItem from="1707487709814" duration="6365000" />
       <workItem from="1707497229436" duration="1920000" />
       <workItem from="1707518160467" duration="889000" />
-      <workItem from="1707567178334" duration="504000" />
+      <workItem from="1707567178334" duration="3731000" />
     </task>
+    <task id="LOCAL-00001" summary="them.">
+      <option name="closed" value="true" />
+      <created>1707568052438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707568052438</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +195,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="them." />
+    <option name="LAST_COMMIT_MESSAGE" value="them." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -202,11 +210,6 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/co/icesi/edu/model/InfrastructureDepartamentTest.java</url>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/co/icesi/edu/model/InfrastructureDepartamentTest.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
