@@ -62,11 +62,6 @@ public class InfrastructureDepartament {
         return "";
     }
 
-    public double averageHeight() {
-        // Implementación pendiente
-        return 0;
-    }
-
 
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---44
 
@@ -137,6 +132,8 @@ public class InfrastructureDepartament {
         return sum / billboards.size();
     }
 
+    //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
+
     public String contadorDeActivos() {
         int trues = 0;
         int falses = 0;
@@ -150,7 +147,7 @@ public class InfrastructureDepartament {
                 falses++;
             }
         }
-        return "Hay " + trues + " verdaderos y " + falses + " falsos.";
+        return "Hay " + trues + " en Uso y " + falses + " en Desuso.";
     }
 
 
@@ -159,7 +156,7 @@ public class InfrastructureDepartament {
     public void resultados() {
         System.out.println();
         System.out.println();
-        System.out.println("RESULTADOS DE LA BASE DE DATOS DE BILLBOARD:");
+        System.out.println("RESULTADOS SEGUN LA BASE DE DATOS DE BILLBOARD:");
         System.out.println();
         System.out.println("El promedio de las Alturas es: " + promedioAltura());
         System.out.println("El promedio de los Anchos es: " + promedioAnchos());
@@ -174,7 +171,7 @@ public class InfrastructureDepartament {
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
 
     public String nombresConRepeticiones() {
-        StringBuilder resultado = new StringBuilder();
+        String resultado = "";
 
         //lista para almacenar los nombres (sin repeticiones)
         List<String> nombresSinRepeticiones = new ArrayList<>();
@@ -195,11 +192,13 @@ public class InfrastructureDepartament {
                     repeticiones++;
                 }
             }
-            resultado.append(" - ").append(nombre).append(": ").append(repeticiones).append(" veces\n");
+            resultado += " - " + nombre + ": " + repeticiones + " veces\n";
         }
 
-        return resultado.toString();
+        return resultado;
     }
+
+    //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
 
 
 }
