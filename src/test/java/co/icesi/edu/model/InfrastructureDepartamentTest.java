@@ -16,7 +16,7 @@ public class InfrastructureDepartamentTest {
         InfrastructureDepartament department = new InfrastructureDepartament();
 
         // Agregar un cartel al departamento de infraestructura
-        department.addBillboard(10.0, 5.0, true, "Coca-Cola");
+        department.addBillboard(10.0, 5.0, true, "Samsung");
     }
 
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
