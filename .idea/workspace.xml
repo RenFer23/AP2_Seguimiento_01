@@ -78,16 +78,18 @@
       <recent name="C:\Users\renzi\Documents\DERENZO\Seguimineto01\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InfrastructureDepartamentTest.testToString">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="co.icesi.edu.ui.Main" />
+  <component name="RunManager" selected="JUnit.InfrastructureDepartamentTest">
+    <configuration name="InfrastructureDepartamentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Seguimineto01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="co.icesi.edu.ui.*" />
+          <option name="PATTERN" value="co.icesi.edu.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="co.icesi.edu.model" />
+      <option name="MAIN_CLASS_NAME" value="co.icesi.edu.model.InfrastructureDepartamentTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InfrastructureDepartamentTest" />
         <item itemvalue="JUnit.InfrastructureDepartamentTest.testToString" />
         <item itemvalue="JUnit.InfrastructureDepartamentTest.testExportDangerousBillboardReport" />
         <item itemvalue="JUnit.InfrastructureDepartamentTest.testSaveBillboard" />
         <item itemvalue="JUnit.InfrastructureDepartamentTest.testContadorDeActivos" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
