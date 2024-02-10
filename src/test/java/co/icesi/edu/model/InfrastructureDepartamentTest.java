@@ -83,7 +83,7 @@ public class InfrastructureDepartamentTest {
         // Esto hace que el método sea accesible
         loadBillboardMethod.setAccessible(true);
 
-        // Invocamos el método
+        // Invocacion del método
         loadBillboardMethod.invoke(department);
     }
 
@@ -98,5 +98,28 @@ public class InfrastructureDepartamentTest {
     }
 
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
+
+    @Test
+    public void testSaveBillboard() throws Exception {
+        InfrastructureDepartament department = new InfrastructureDepartament();
+        Method saveBillboardMethod = InfrastructureDepartament.class.getDeclaredMethod("saveBillboard");
+
+        saveBillboardMethod.setAccessible(true);
+        saveBillboardMethod.invoke(department);
+    }
+
+    @Test
+    public void testExportDangerousBillboardReport() throws Exception {
+        InfrastructureDepartament department = new InfrastructureDepartament();
+        department.exportDangerousBillboardReport("testFileName");
+    }
+
+    @Test
+    public void testToString() throws Exception {
+        InfrastructureDepartament department = new InfrastructureDepartament();
+
+        String result = department.toString();
+        Assert.assertNotNull(result);
+    }
 
 }

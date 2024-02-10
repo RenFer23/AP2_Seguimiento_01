@@ -22,11 +22,7 @@ public class InfrastructureDepartament {
     }
 
     public void addBillboard(double w, double h, boolean ui, String b) {
-
-    }
-
-    private void saveBillboard() {
-        // Implementación pendiente
+        //
     }
 
     private void loadBillboard() throws Exception {
@@ -46,20 +42,28 @@ public class InfrastructureDepartament {
 
     }
 
+    //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
+
+    private void saveBillboard() {
+        // Implementación pendiente
+    }
+
     public void exportDangerousBillboardReport(String fn) {
         // Implementación pendiente
     }
+
+    public String toString() {
+        // Implementación pendiente
+        return "";
+    }
+
+    //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---
 
     public void importData(String fn) {
         String[] columns = fn.split("\\|");
         System.out.println(Arrays.toString(columns));
         Billboard billboard = new Billboard(Double.parseDouble(columns[0]), Double.parseDouble(columns[1]), Boolean.parseBoolean(columns[2]), columns[3]);
         billboards.add(billboard);
-    }
-
-    public String toString() {
-        // Implementación pendiente
-        return "";
     }
 
     //---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---//---44
